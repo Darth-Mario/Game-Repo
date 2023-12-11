@@ -234,7 +234,7 @@ public class PlayerController : MonoBehaviour
 
         bool pushingWall = false;
 
-        if (_rigidBody.velocity.x > 0 && _collider._onRightWall) || (_rigidBody.velocity.x < 0 && _collider._onLeftWall))
+        if ((_rigidBody.velocity.x > 0 && _collider._onRightWall) || (_rigidBody.velocity.x < 0 && _collider._onLeftWall))
         {
             pushingWall= true;
         } 
